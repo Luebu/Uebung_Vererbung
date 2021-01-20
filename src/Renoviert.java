@@ -1,4 +1,4 @@
-public class Sohn extends Geschaeft {
+public class Renoviert extends Geschaeft {
     boolean tisch1 = false;
     boolean tisch2 = false;
     boolean tisch3 = false;

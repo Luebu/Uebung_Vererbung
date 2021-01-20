@@ -68,4 +68,50 @@ public class Sohn extends Geschaeft {
         }
         preis = preis1 + preis2;
     }
+    public void sitzen(int platznummer){
+        switch(platznummer){
+            case 1:
+                if(tisch1 == true){
+                    System.out.print("Besetzt");
+                    break;
+                }
+                tisch1 = true;
+                break;
+            case 2:
+                if(tisch2 == true){
+                    System.out.print("Besetzt");
+                    break;
+                }
+                tisch2 = true;
+                break;
+            case 3:
+                if(tisch3 == true){
+                    System.out.print("Besetzt");
+                    break;
+                }
+                tisch3 = true;
+                break;
+            case 4:
+                if(tisch4 == true){
+                    System.out.print("Besetzt");
+                    break;
+                }
+                tisch4 = true;
+                break;
+            case 5:
+                if(tisch5 == true){
+                    System.out.print("Besetzt");
+                    break;
+                }
+                tisch5 = true;
+                break;
+            case 6:
+                if(tisch6 == true){
+                    System.out.print("Besetzt");
+                    break;
+                }
+                tisch6 = true;
+                break;
+        }
+    }
 }

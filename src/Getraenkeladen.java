@@ -1,7 +1,4 @@
 public class Getraenkeladen extends Geschaeft {
-    String w = "Wasser";
-    String f = "Fanta";
-    String b = "Bier";
 
     @Override
     public void menue(int auswahl) {

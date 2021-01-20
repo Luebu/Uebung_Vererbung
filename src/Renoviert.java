@@ -5,9 +5,6 @@ public class Renoviert extends Geschaeft {
     boolean tisch4 = false;
     boolean tisch5 = false;
     boolean tisch6 = false;
-    String k = "Kirschen";
-    String b = "Blaubeeren";
-    String n = "Nüsse";
 
     @Override
     public void selbstmischung(int auswahl1, int auswahl2) {
@@ -71,42 +68,42 @@ public class Renoviert extends Geschaeft {
     public void sitzen(int platznummer){
         switch(platznummer){
             case 1:
-                if(tisch1 == true){
+                if(tisch1){
                     System.out.print("Besetzt");
                     break;
                 }
                 tisch1 = true;
                 break;
             case 2:
-                if(tisch2 == true){
+                if(tisch2){
                     System.out.print("Besetzt");
                     break;
                 }
                 tisch2 = true;
                 break;
             case 3:
-                if(tisch3 == true){
+                if(tisch3){
                     System.out.print("Besetzt");
                     break;
                 }
                 tisch3 = true;
                 break;
             case 4:
-                if(tisch4 == true){
+                if(tisch4){
                     System.out.print("Besetzt");
                     break;
                 }
                 tisch4 = true;
                 break;
             case 5:
-                if(tisch5 == true){
+                if(tisch5){
                     System.out.print("Besetzt");
                     break;
                 }
                 tisch5 = true;
                 break;
             case 6:
-                if(tisch6 == true){
+                if(tisch6){
                     System.out.print("Besetzt");
                     break;
                 }

@@ -1,13 +1,5 @@
 public class Geschaeft {
     int preis;
-    String menue1="Vanille und Banane";
-    String menue2 = "Schoko und Erdbeere";
-    String menue3 = "Schoko und Vanille";
-
-    String s = "Schokolade";
-    String v = "Vanille";
-    String e = "Erdbeeren";
-    String ba= "Banane";
 
     public int Kasse(int geldgegeben){
         int wechelsgeld;

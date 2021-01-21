@@ -1,66 +1,21 @@
+import java.util.*;
 public class Geschaeft {
     int preis;
-
+    private ArrayList<Produkt> menue = new ArrayList<Produkt>();
+    private ArrayList<Produkt> auswahlmenue = new ArrayList<Produkt>();
     public int Kasse(int geldgegeben){
         int wechelsgeld;
         wechelsgeld=geldgegeben-preis;
         return wechelsgeld;
     }
-    public void menue(int auswahl){
-        switch(auswahl){
-            case 0:
-                preis = 5;
-                break;
-            case 1:
-                preis = 5;
-                break;
-            case 2:
-                preis = 5;
-                break;
-            default:
-                System.out.println("Flasche");
-                break;
-        }
+    public void menue(int pAuswahl){
+        preis=menue.get(pAuswahl).getPreis();
     }
-    public void selbstmischung(int auswahl1, int auswahl2){
-        int preis1=0;
-        switch(auswahl1){
-            case 0:
-                preis1 = 2;
-                break;
-            case 1:
-                preis1 = 2;
-                break;
-            case 2:
-                preis1 = 3;
-                break;
-            case 3:
-                preis1 = 3;
-                break;
-            default:
-                System.out.println("Kannst du kein Menü lesen oder was!!");
+    public void auswahlmenue(int pAuswahl1, int pAuswahl2){
+        int preis1=auswahlmenue.get(pAuswahl1).getPreis();
 
-                break;
-        }
-        int preis2=0;
-        switch(auswahl2){
-            case 0:
-                preis2 = 2;
-                break;
-            case 1:
-                preis2 = 2;
-                break;
-            case 2:
-                preis2 = 3;
-                break;
-            case 3:
-                preis2 = 3;
-                break;
-            default:
-                System.out.println("Kannst du kein Menü lesen oder was!!");
+        int preis2=auswahlmenue.get(pAuswahl2).getPreis();
 
-                break;
-        }
         preis=preis1+preis2;
     }
 }
